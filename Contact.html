@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Bean Haven</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+<div class="logo">Bean Haven</div>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="contact-section page-content">
+<h2 class="section-heading">Contact Us</h2>
+<p class="section-subtitle">We’d love to hear from you. Please leave your message below.</p>
+
+<div class="contact-form-container">
+<form id="contactForm">
+<div class="input-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="input-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Your Email" required>
+</div>
+
+<div class="input-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+</div>
+
+<button type="submit" class="login-btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Bean Haven</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar">
+<div class="logo">Bean Haven</div>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<section class="checkout-heading">
+<h1>Are you ready to checkout?</h1>
+</section>
+<div class="cart-container">
+<h2>Checkout</h2>
+<h3>Shipping Details</h3>
+<form onsubmit="return handlePlaceOrder(event)">
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" id="orderName" placeholder="John Doe" required>
+</div>
+
+<div class="input-group">
+<label>Email Address</label>
+<input type="email" id="orderEmail" placeholder="john@example.com" required>
+</div>
+
+<div class="input-group">
+<label>Shipping Address</label>
+<input type="text" id="orderAddress" placeholder="House No, Street, City" required>
+</div>
+
+<button type="submit" class="btn-pay">Place Order</button>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

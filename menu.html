@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu | Bean Haven</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">Bean Haven</div>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="menu-section">
+<h2 class="section-heading">Our Menu</h2>
+<p class="section-subtitle">Click on a coffee to see details</p>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<div class="card-inner">
+<div class="card-front">
+<img src="images/espresso.jpg">
+<h3>Espresso</h3>
+</div>
+<div class="card-back">
+<p>Price: 650 PKR</p>
+<p>Rating: ★★★★☆</p> 
+<p>Ingredients: Coffee beans, water</p> 
+<p>Extra Topping: Milk 100 PKR, Chocolate 70 PKR</p>
+<button class="add-cart-btn" data-name="Espresso" data-price="650" data-img="images/espresso.jpg" onclick="addToCart('Espresso')"> Add to Cart </button>
+</div>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="card-inner">
+<div class="card-front">
+<img src="images/Cappuccino.jpg">
+<h3>Cappuccino</h3>
+</div>
+<div class="card-back">
+<p>Price: 650 PKR</p>
+<p>Rating: ★★★★★</p> 
+<p>Ingredients: Coffee, milk, foam</p> 
+<p>Extra Topping: Chocolate 60 PKR, Cinnamon 40 PKR</p>
+<button class="add-cart-btn" data-name="Cappuccino" data-price="650" data-img="images/Cappuccino.jpg" onclick="addToCart('Cappuccino')"> Add to Cart </button>
+</div>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="card-inner">
+<div class="card-front">
+<img src="images/latte.jpg">
+<h3>Latte</h3>
+</div>
+<div class="card-back">
+<p>Price: 650 PKR</p>
+<p>Rating: ★★★★☆</p>
+<p>Ingredients: Coffee, milk, flavor syrup</p> 
+<p>Extra Topping: Caramel 50 PKR, Vanilla 50 PKR</p>
+<button class="add-cart-btn" data-name="Latte" data-price="650" data-img="images/latte.jpg" onclick="addToCart('Latte')"> Add to Cart </button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

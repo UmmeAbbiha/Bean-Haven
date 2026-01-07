@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bean Haven</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">Bean Haven</div>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="cart.html">Cart</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section class="slideshow-heading">
+<h1>Bean Haven</h1>
+</section>
+<section class="slider-section">
+<div class="slider-container">
+<div class="slides">
+<img src="images/image4.jpg" class="slide"> 
+<img src="images/image1.jpg" class="slide">
+<img src="images/image2.jpg" class="slide">
+<img src="images/image3.jpg" class="slide">
+</div>
+<button class="prev" onclick="prevSlide()">&#10094;</button>
+<button class="next" onclick="nextSlide()">&#10095;</button>
+</div> 
+</section>
+
+<section class="deal-section">
+<h2 class="section-heading">Deal of the Day</h2>
+<p class="section-subtitle">Get a special discount on our featured coffee!</p>
+
+<div class="deal-card">
+<img src="images/special.jpg" alt="Latte">
+<div class="deal-info">
+<h3>Latte Special</h3>
+<p>Discount Price: 750 PKR</p>
+<p>Original Price: 900 PKR</p>
+<p>Ends in: <span id="deal-timer"></span></p>
+<button class="add-cart-btn" data-name="Latte Special" data-price="750" data-img="images/special.jpg" onclick="addToCart('Latte Special')"> Add to Cart </button>
+</div>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
